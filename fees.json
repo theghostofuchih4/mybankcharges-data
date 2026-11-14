@@ -1,0 +1,283 @@
+{
+  "lastUpdated": "2026-11-12",
+  "note": "Transfer fee tiers (₦10 / ₦25 / ₦50) reflect the current confirmed NIP fee schedule used by CBN-regulated banks and fintechs. A CBN draft proposing free transfers under ₦5,000 and no card maintenance fee was circulated in April 2026 but has not been confirmed as adopted. A separate ₦50 Electronic Money Transfer Levy (government stamp duty, not a bank fee) applies on transfers of ₦10,000 and above, paid by the sender since January 2026.",
+  "emtlLevy": {
+    "amount": 50,
+    "appliesFrom": 10000,
+    "description": "Federal stamp duty (EMTL), not a bank charge. Applies once per transfer of ₦10,000 or more, added on top of the fee shown below."
+  },
+  "banks": [
+    {
+      "id": "kuda",
+      "name": "Kuda",
+      "type": "fintech",
+      "signupUrl": "https://www.kuda.com",
+      "hasReferralProgram": true,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 0,
+      "smsAlertFeeMonthly": 6,
+      "notes": "First 25 transfers to other banks each month are free; standard NIP tiers apply after that. 7.5% VAT applies on top of the transfer fee since January 2026."
+    },
+    {
+      "id": "opay",
+      "name": "OPay",
+      "type": "fintech",
+      "signupUrl": "https://www.opayweb.com",
+      "hasReferralProgram": true,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 10 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 10 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 0,
+      "smsAlertFeeMonthly": 6,
+      "notes": "OPay-to-OPay transfers are free. OPay doesn't publish one clear public fee for transfers to other banks — commonly reported around ₦10 flat, but this can vary. Confirm in-app."
+    },
+    {
+      "id": "moniepoint",
+      "name": "Moniepoint",
+      "type": "fintech",
+      "signupUrl": "https://moniepoint.com",
+      "hasReferralProgram": true,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 20 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 20 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 20 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 0,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Flat ₦20 fee per transfer regardless of amount — this is well and consistently documented."
+    },
+    {
+      "id": "palmpay",
+      "name": "PalmPay",
+      "type": "fintech",
+      "signupUrl": "https://www.palmpay.com",
+      "hasReferralProgram": true,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 0,
+      "smsAlertFeeMonthly": 6,
+      "notes": "PalmPay-to-PalmPay transfers are free. PalmPay does not publish a clear fee schedule for transfers to other banks — this figure is an estimate based on standard NIP tiers, not a confirmed PalmPay rate."
+    },
+    {
+      "id": "gtbank",
+      "name": "GTBank",
+      "type": "traditional",
+      "signupUrl": "https://www.gtbank.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "access",
+      "name": "Access Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.accessbankplc.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers. USSD transfers via *901# carry an extra ~₦6.98 telco charge, separate from this fee."
+    },
+    {
+      "id": "zenith",
+      "name": "Zenith Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.zenithbank.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "uba",
+      "name": "UBA",
+      "type": "traditional",
+      "signupUrl": "https://www.ubagroup.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "firstbank",
+      "name": "First Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.firstbanknigeria.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "unionbank",
+      "name": "Union Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.unionbankng.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "fidelity",
+      "name": "Fidelity Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.fidelitybankplc.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "fcmb",
+      "name": "FCMB",
+      "type": "traditional",
+      "signupUrl": "https://www.fcmb.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "sterling",
+      "name": "Sterling Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.sterling.ng",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "wema",
+      "name": "Wema Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.wemabank.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers. Also operates ALAT, Wema's standalone digital banking app."
+    },
+    {
+      "id": "unity",
+      "name": "Unity Bank",
+      "type": "traditional",
+      "signupUrl": "https://www.unitybankng.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    },
+    {
+      "id": "ecobank",
+      "name": "Ecobank Nigeria",
+      "type": "traditional",
+      "signupUrl": "https://www.ecobank.com",
+      "hasReferralProgram": false,
+      "referralCode": "",
+      "transferFees": [
+        { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
+        { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
+        { "minAmount": 50001, "maxAmount": 9999999, "fee": 50 }
+      ],
+      "atmWithdrawalFee": 0,
+      "cardMaintenanceFeeMonthly": 50,
+      "smsAlertFeeMonthly": 6,
+      "notes": "Standard confirmed NIP tiers."
+    }
+  ]
+}
