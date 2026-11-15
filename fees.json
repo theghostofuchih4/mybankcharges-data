@@ -132,7 +132,7 @@
       "type": "traditional",
       "signupUrl": "https://www.ubagroup.com",
       "hasReferralProgram": false,
-      "referralCode": "",
+      "referralCode": "https://opay.ng/s/oVIohz",
       "transferFees": [
         { "minAmount": 0, "maxAmount": 5000, "fee": 10 },
         { "minAmount": 5001, "maxAmount": 50000, "fee": 25 },
